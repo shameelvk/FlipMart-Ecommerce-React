@@ -1,0 +1,23 @@
+.offpd-img{
+    height: 30vh;
+    object-fit: contain;
+}
+.offer-banner{
+    position: absolute;
+    top: -2px;
+    left: 0;
+    /* width: 80px; */
+    height: 90px;
+    margin-left: -5px;
+    
+}
+.offpd-card{
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    position: relative;
+   
+    
+}
+.deliver{
+    font-size: small;
+    
+}
