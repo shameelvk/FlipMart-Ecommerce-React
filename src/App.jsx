@@ -13,19 +13,15 @@ import { useState } from 'react'
 import Cart from './Pages/Cart/Cart'
 
 function App() {
-  const [search, setSearch] = useState('')
- function productSerch(product) {
-  setSearch(product)
   
- }
   return (
     <>
-    <Navbar productSerch={productSerch} />
+    <Navbar/>
     <Routes>
     <Route path='/' element={<Home/>}></Route>
     <Route path='/about-us' element={<AboutUs/>}></Route>
     <Route path='/contact-us' element={<ContactUs/>}></Route>
-    <Route path='/products' element={<Products searchValue={search}/>}></Route>
+    <Route path='/products' element={<Products />}></Route>
     <Route path='/login' element={<Login/>}></Route>
     <Route path='/signup' element={<Signup/>}></Route>
     <Route path='/products/:productId' element={<ProductDetails/>}></Route>
